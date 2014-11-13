@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads your latest Watchman Monitoring Client package. You will need to update DOWNLOAD_URL to suit your organisation. You will also need to update DS_PKGS_PATH to point to the Packages directory in you DeployStudio repository. NAME and DS_NAME can optionally be changed. NAME will change the name of the initial downloaded Package. DS_NAME allows you to change the name of the Package that gets placed in your DS repository.</string>
+    <key>Identifier</key>
+    <string>com.MonitoringClient.download.client</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>MonitoringClient</string>
+        <key>DOWNLOAD_URL</key>
+        <string>https://electricuniverse.monitoringclient.com/downloads/MonitoringClient.pkg</string>
+        <key>DS_PKGS_PATH</key>
+		<string>/DATA/Operations/IT/DeployStudioShare/Packages</string>
+		<key>DS_NAME</key>
+		<string>%NAME%</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>%DOWNLOAD_URL%</string>
+                <key>filename</key>
+                <string>%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>StopProcessingIf</string>
+            <key>Arguments</key>
+            <dict>
+                <key>predicate</key>
+                <string>new_package_request == FALSE</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Copier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>source_path</key>
+                <string>%pathname%</string>
+                <key>destination_path</key>
+                <string>%DS_PKGS_PATH%/%DS_NAME%.pkg</string>
+                <key>overwrite</key>
+                <true/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>EndOfCheckPhase</string>
+        </dict>
+    </array>
+</dict>
+</plist>
