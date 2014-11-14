@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads Billings Pro disk image and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>com.github.bradclare.munki.billingspro</string>
+    <key>Input</key>
+    <dict>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>apps/BillingsPro</string>
+        <key>NAME</key>
+        <string>BillingsPro</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Billings Pro helps you create professional invoices and track time, expenses, and payments from your Mac, iPhone and iPad.
+
+Key features Include:
+
+• Synchronize between multiple iPhones, iPads and Macs.
+• Add unlimited clients and projects.
+• Create professional invoices.
+• Flexible billing options that include time, project, expense, product, service, or flat rate.
+• Easily identify overdue clients and outstanding invoices.
+• Send estimates and statements.
+• Run comprehensive reports that help you understand your business.
+• Add additional colleagues if necessary.
+• Multi-currency support.
+
+Use Billings Pro free on your Mac(s) and iOS devices to send 1 invoice, 1 estimate and 1 statement per month. To send more, choose a subscription plan via the In-App Purchase on Billings Pro for iOS or visit our website to learn more: http://www.marketcircle.com/billingspro/</string>
+            <key>display_name</key>
+            <string>Billings Pro</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.bradclare.download.billingspro</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%pathname%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
