@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads Daylite 5 Server disk image and imports into Munki.</string>
+    <string>Downloads Daylite disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.bradclare.munki.daylite5server</string>
+    <string>com.github.bradclare.munki.daylite</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>apps/Daylite5Server</string>
+        <string>apps/Daylite</string>
         <key>NAME</key>
-        <string>Daylite 5 Server</string>
+        <string>Daylite</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -21,7 +21,7 @@
             <key>description</key>
             <string>Daylite keeps everything related to your business in one place, so you and your team can share information wherever they are by Mac, iPhone, and iPad. Your contacts, schedule, tasks, projects, sales opportunities, emails, and notes are all there, making it easy to find what you are looking for in seconds.</string>
             <key>display_name</key>
-            <string>Daylite 5 Server</string>
+            <string>Daylite</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.bradclare.download.daylite5server</string>
+    <string>com.github.bradclare.download.daylite</string>
     <key>Process</key>
     <array>
         <dict>

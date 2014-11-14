@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download recipe for Daylite.</string>
+    <string>Download recipe for Daylite Server.</string>
     <key>Identifier</key>
-    <string>com.github.bradclare.download.daylite5</string>
+    <string>com.github.bradclare.download.dayliteserver</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Daylite5</string>
+        <string>DayliteServer</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://www.marketcircle.com/daylite/download/daylitedma/</string>
+        <string>https://www.marketcircle.com/daylite/download/dayliteserver/</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
