@@ -9,9 +9,9 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Daylite</string>
+        <string>BillingsPro</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://download.marketcircle.com/billingspro/billingspro172.dmg</string>
+        <string>https://www.marketcircle.com/billingspro/downloadlink/billingspromac/</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
