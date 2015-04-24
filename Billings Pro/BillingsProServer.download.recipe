@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>BillingsProServer</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://download.marketcircle.com/billingspro/billingsproserver172.dmg</string>
+        <string>https://www.marketcircle.com/billingspro/downloadlink/billingsproserver/</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
