@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>FileMakerServer13</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://fmdl.filemaker.com/TBUB/13/fms_trial_13.0.3.300.dmg</string>
+        <string>http://www.filemaker.com/redirects/ss.html?file=SRV13MAC</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
