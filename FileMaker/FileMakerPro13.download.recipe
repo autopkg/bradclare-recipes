@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>FileMakerPro13</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://fmdl.filemaker.com/TBUB/13/fmp_trial_fm_13.0.3.231.dmg</string>
+        <string>http://www.filemaker.com/redirects/ss.html?file=PRO13MAC</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
