@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>FileMakerServer14</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://fmdl.filemaker.com/maint/emea_fba_ftn/fms_14.0.1.204.dmg</string>
+        <string>http://fmdl.filemaker.com/maint/emea_fba_ftn/fms_14.0.4.412.dmg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
