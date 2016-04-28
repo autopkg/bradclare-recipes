@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>DayliteServer</string>
         <key>DOWNLOAD_URL</key>
-        <string>https://www.marketcircle.com/daylite/download/dayliteserver/</string>
+        <string>https://www.marketcircle.com/daylite/download/6/dayliteserver/</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
