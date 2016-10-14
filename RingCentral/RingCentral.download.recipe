@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>RingCentral</string>
         <key>DOWNLOAD_URL</key>
-        <string>http://downloads.ringcentral.com/sp/RingCentralForMac</string>
+        <string>https://downloads.ringcentral.com/sp/RingCentralForMac</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
