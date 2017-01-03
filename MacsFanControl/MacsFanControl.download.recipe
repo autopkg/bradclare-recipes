@@ -13,7 +13,7 @@
 		<key>APP_FILENAME</key>
 		<string>Macs Fan Control</string>
 		<key>DOWNLOAD_URL</key>
-		<string>http://www.crystalidea.com/downloads/macsfancontrol.zip</string>
+		<string>https://www.crystalidea.com/downloads/macsfancontrol.zip</string>
 		<key>NAME</key>
 		<string>MacsFanControl</string>
 	</dict>
