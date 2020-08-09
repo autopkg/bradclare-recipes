@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Daylite postinstall
+# Installs Daylite Mail Assistant
+
+dmaPkg="/Applications/Daylite.app/Contents/Resources/Packages/InstallDMA.pkg"
+
+if [ ! -f "${dmaPkg}" ]; then
+	/bin/echo "ERROR: Daylite Mail Assistant package not found."
+	exit 1
+fi
+
+/usr/sbin/installer -verbose -pkg "${dmaPkg}" -tgt /
