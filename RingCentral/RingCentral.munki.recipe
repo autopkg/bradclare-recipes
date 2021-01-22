@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads RingCentral disk image and imports into Munki.</string>
+    <string>Downloads RingCentral package and imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.bradclare.munki.ringcentral</string>
     <key>Input</key>
@@ -19,7 +19,7 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>RingCentral for Desktop turns your PC into your personal business command center. Manage all your business communication from one app – take calls, play voicemails, send text and faxes – anywhere.</string>
+            <string>RingCentral for Desktop turns your PC into your personal business command center. Manage all your business communication from one app - take calls, play voicemails, send text and faxes - anywhere.</string>
             <key>display_name</key>
             <string>RingCentral</string>
             <key>minimum_os_version</key>
