@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Munki recipe for RingCentral</string>
+    <string>Munki recipe for RingCentral Phone (RingCentral for Mac.app)</string>
     <key>Comment</key>
-    <string>https://support.ringcentral.com/article/Using-Latest-RingCentral-App.html</string>
+	<string>https://support.ringcentral.com/article/7244.html</string>
     <key>Identifier</key>
-    <string>com.github.bradclare.munki.ringcentral</string>
+    <string>com.github.bradclare.munki.ringcentralphone</string>
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>apps/RingCentral</string>
         <key>NAME</key>
-        <string>RingCentral</string>
+        <string>RingCentral Phone</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -21,9 +21,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Everything you need in one beautiful app; Team messaging, video meetings, and a business phone-reimagined so you can do more from anywhere.</string>
+            <string>The RingCentral Phone is an easy-to-use app, and a comprehensive communications hub with an all-inclusive phone, fax, business SMS, and conferencing for your desktop. It provides an intuitive interface that optimizes the user experience and increases productivity.</string>
             <key>display_name</key>
-            <string>RingCentral</string>
+            <string>RingCentral Phone</string>
             <key>minimum_os_version</key>
             <string>10.13</string>
             <key>name</key>
@@ -35,7 +35,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.bradclare.download.ringcentral</string>
+    <string>com.github.bradclare.download.ringcentralphone</string>
     <key>Process</key>
     <array>
         <dict>

@@ -3,7 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Creates a version'd pkg for the RingCentral Mac app</string>
+    <string>Pkg recipe for RingCentral</string>
+    <key>Comment</key>
+    <string>https://support.ringcentral.com/article/Using-Latest-RingCentral-App.html</string>
     <key>Identifier</key>
     <string>com.github.bradclare.pkg.ringcentral</string>
     <key>Input</key>
