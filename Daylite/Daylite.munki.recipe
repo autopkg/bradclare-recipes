@@ -29,6 +29,21 @@
 			<string>Daylite</string>
 			<key>name</key>
 			<string>%NAME%</string>
+			<key>postinstall_script</key>
+			<string>#!/bin/sh
+
+# Daylite postinstall
+# Installs Daylite Mail Assistant
+
+dmaPkg="/Applications/Daylite.app/Contents/Resources/Packages/InstallDMA.pkg"
+
+if [ ! -f "${dmaPkg}" ]
+then
+	/bin/echo "ERROR: Daylite Mail Assistant package not found."
+	exit 1
+fi
+
+/usr/sbin/installer -verbose -pkg "${dmaPkg}" -target /</string>
 			<key>unattended_install</key>
 			<true/>
 		</dict>
@@ -36,19 +51,42 @@
 	<key>MinimumVersion</key>
 	<string>0.2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.bradclare.pkg.daylite</string>
+	<string>com.github.bradclare.download.daylite</string>
 	<key>Process</key>
 	<array>
+        <dict>
+            <key>Processor</key>
+            <string>DmgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+                <key>dmg_root</key>
+                <string>%RECIPE_CACHE_DIR%/unzip</string>
+            </dict>
+        </dict>
 		<dict>
+			<key>Processor</key>
+			<string>MunkiImporter</string>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_path</key>
-				<string>%pkg_path%</string>
+				<string>%dmg_path%</string>
 				<key>repo_subdirectory</key>
 				<string>%MUNKI_REPO_SUBDIR%</string>
 			</dict>
+		</dict>
+		<dict>
 			<key>Processor</key>
-			<string>MunkiImporter</string>
+			<string>PathDeleter</string>s
+			<key>Arguments</key>
+			<dict>
+				<key>path_list</key>
+				<array>
+					<string>%pkgroot%</string>
+					<string>%RECIPE_CACHE_DIR%/unzip</string>
+				</array>
+			</dict>
 		</dict>
 	</array>
 </dict>
