@@ -78,7 +78,7 @@ fi
 		</dict>
 		<dict>
 			<key>Processor</key>
-			<string>PathDeleter</string>s
+			<string>PathDeleter</string>
 			<key>Arguments</key>
 			<dict>
 				<key>path_list</key>
