@@ -5,7 +5,9 @@
     <key>Description</key>
     <string>Munki recipe for RingCentral
 
-Set the DERIVE_MIN_OS variable to a non-empty string to set the minimum_os_version via MunkiInstallsItemsCreator. This requires a minimum AutoPkg version of 2.7 please update if you're not already running it.</string>
+Set the DERIVE_MIN_OS variable to a non-empty string to set the minimum_os_version via MunkiInstallsItemsCreator. This requires a minimum AutoPkg version of 2.7 please update if you're not already running it.
+
+If you provide a custom DOWNLOAD_URL value (e.g. to download the Apple Silicon version), be sure to also provide a supported_architectures array.</string>
     <key>Comment</key>
     <string>https://support.ringcentral.com/article/Using-Latest-RingCentral-App.html</string>
     <key>Identifier</key>

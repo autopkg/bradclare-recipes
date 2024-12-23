@@ -3,7 +3,11 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Download recipe for RingCentral</string>
+    <string>Download recipe for RingCentral.
+    
+The Intel version is downloaded by default. To download the Apple Silicon version, use this DOWNLOAD_URL:
+https://app.ringcentral.com/download/RingCentral-arm64.pkg
+</string>
     <key>Comment</key>
     <string>https://support.ringcentral.com/article/Using-Latest-RingCentral-App.html</string>
     <key>Identifier</key>
